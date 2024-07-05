@@ -1,0 +1,70 @@
+:root{
+    --primaryColor:#0076de;
+    --whitecolor:#fff;
+    --blackcolor:#333;
+    --greycolor:#f6f8fa;
+    --labelcolor:#64b1f5;
+    --yellowcolor:#ffd723;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Nunito',sans-serif;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+h1{
+    line-height: 1.5;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding:1rem 2.5rem ;
+    z-index: 10;
+    color: var(--whitecolor);
+    background: black;
+}
+.navbar-logo > a{
+    letter-spacing: 2.5;
+    text-decoration: none;
+    color: var(--whitecolor);
+}
+.navbar-menu{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-menu > a{
+    color: var(--whitecolor);
+    text-decoration: none;
+}
+.menu-toggle{
+    display: none;
+}
+.menu-toggle .bar{
+    width: 15px;
+    height: 2px;
+    margin: 3px auto;
+    transition: all 0.3 ease-in-out;
+    background-color: var(--whitecolor);
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height:60%;
+    background-image: url("images/banner.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative ;
+}
